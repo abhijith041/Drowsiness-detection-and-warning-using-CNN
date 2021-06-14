@@ -1,0 +1,164 @@
+<html>
+<head>
+    <title>Drowsiness Detection</title>
+<style>
+<!-- Custom Font
+    ================================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Exo:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7cRoboto+Slab:400,700" rel="stylesheet">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/color-schemer.css">
+   
+table
+{text-align: left;
+font-size:20px;
+background-color: #f44356;
+font-weight:800;
+width:20px;
+}
+tr{ height:30px;}
+
+.button {
+  display: inline-block;
+  background-color:#f4fb34 ;#2ecc71;
+  border-radius: 45%;
+  width:27%;
+  height: 6%;
+  color: black;
+  padding: .5em;
+  text-decoration: none;
+  text-transform:uppercase;
+  
+}
+
+.button:focus,
+.button:hover {
+ background-color: Crimson;
+  color: white;
+}
+
+.evidence {
+  display: inline-block;
+  background-color:#2ecc71 ;
+  border-radius: 10%;
+  width:25%;
+  height: 5%;
+  color: black;
+  padding: .5em;
+  text-decoration: none;
+  text-transform:uppercase;
+  }
+
+.content {
+  display: none;
+  margin: 1em 0;
+}
+
+.content.active,
+.no-js .content {
+  display: block;
+}
+
+.btn
+  {
+  text-decoration: none;
+  background:#2ecc71;
+  width:125px;
+  padding-top:5px;
+  padding-bottom:5px;
+  color:white;
+  border-radius:5px;
+  border: #27ae60 1px solid;
+  
+  margin-top:20px;
+  margin-bottom:20px;
+  float:leftt;
+  margin-left:px;
+  font-weight:800;
+  font-size:0.8em;
+}
+.boxed
+{
+background-image : url("{{ url_for('static', filename='images/drowsi444.jpg') }}");
+background-size: 100% 100%;
+background-size: cover;
+background-blend-mode: lighten;
+opacity:;
+position: relative;
+border:5px #9c27b0; 
+border-radius: 10px;
+width:50%;
+height:60%;
+Background-color:''''f9f391;
+ box-shadow: 5px 5px 20px #a9a9a9;}
+
+
+
+.hidiv
+{border:5px #9c27b0; 
+width:100%; 
+height:20%;
+Background-color:black;
+}
+.safedrive{
+border:5px #9c27b0;
+width:100%;
+height:10%;
+Background-color:black;
+}
+
+.blink{
+left:50%;
+top:25%;
+position: absolute;
+transform:translate(-50%,-75%);
+}
+span{
+font-size:;
+font-family:Arial ;
+text-transform:capitalize;
+style:italic;
+animation: blink 1s linear infinite;
+color:yellow;
+}
+@keyframes blink{
+0%{opacity:0;}
+50%{opacity:.7;}
+100%{opacity:.1;}
+
+}
+
+ </style>
+	</head>
+<body><center>
+<div class="hidiv">
+<font  color="ffdf00" size="15"><b> <br>DROWSINESS DETECTION</b></font>
+</div>
+
+
+<div class="boxed">
+
+ <!-- style=" width:80%;Background-color:#D5C2ED;  box-shadow: 5px 5px 20px #a9a9a9;"   #B41612-->
+<center>
+<h2>
+<br>
+    <div class=""safedrive">
+<font style="color:#e2e2e2 " size="6"><b>HAVE A SAFE DRIVE </font></div></h2></center><br>
+   <div class="blink" >
+       <p ><span>** *   important   * **</span></p></div><br>
+
+        <font style="color:white" size="3">
+       <p >Please click on "OPEN CAMERA" for realtime detection while you driving </p></font><br>
+    <a class="button" href="video_feed"><font size="4" >open camera </font></a><br><br><br><br><br><br>
+<!-- <input type="Submit" name="su" value="open camera" class="submit yellow-button"> -->
+  <div >  <a href="{{ url_for('second') }}" class="evidence"><font size="3" >click for evidence </font></a></div>
+    </div>
+
+
+<!--  <input class="btn" type="button" value="open camera" action=""> -->
+</center>
+</body>
+<html>
